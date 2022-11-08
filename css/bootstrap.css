@@ -7056,11 +7056,11 @@ button.list-group-item-danger.active:hover {
 }
 
 button.close {
-    -webkit-appearance: none;
+    appearance: none;
     padding: 0;
     cursor: pointer;
     background: 0 0;
-    border: 0
+    border: 0;
 }
 
 .modal-open {
