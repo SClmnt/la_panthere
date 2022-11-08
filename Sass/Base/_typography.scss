@@ -22,8 +22,10 @@ h3{
 .text{
     &--orange{
         color: $primary-color;
+        z-index: 1;
     }
     &--center{
         text-align: center;
+        z-index: 1;
     }
 }

@@ -30,8 +30,11 @@ header{
     }
 }
 
-footer{
+.footer{
     background-color: $primary-color;
+    &__title{
+        font-size: 1.3vw;
+    }
 }
 
 .row-social {
