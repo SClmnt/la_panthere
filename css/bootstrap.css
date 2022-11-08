@@ -156,7 +156,7 @@ button,
 html input[type=button],
 input[type=reset],
 input[type=submit] {
-    -webkit-appearance: button;
+    appearance: button;
     cursor: pointer
 }
 
@@ -180,53 +180,53 @@ input[type=radio] {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 0
+    padding: 0;
 }
 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
-    height: auto
+    height: auto;
 }
 
 input[type=search] {
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
-    -webkit-appearance: textfield
+    appearance: textfield;
 }
 
 input[type=search]::-webkit-search-cancel-button,
 input[type=search]::-webkit-search-decoration {
-    -webkit-appearance: none
+    appearance: none;
 }
 
 fieldset {
     padding: .35em .625em .75em;
     margin: 0 2px;
-    border: 1px solid silver
+    border: 1px solid silver;
 }
 
 legend {
     padding: 0;
-    border: 0
+    border: 0;
 }
 
 textarea {
-    overflow: auto
+    overflow: auto;
 }
 
 optgroup {
-    font-weight: 700
+    font-weight: 700;
 }
 
 table {
     border-spacing: 0;
-    border-collapse: collapse
+    border-collapse: collapse;
 }
 
 td,
 th {
-    padding: 0
+    padding: 0;
 }
 
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
@@ -239,17 +239,17 @@ th {
         text-shadow: none !important;
         background: 0 0 !important;
         -webkit-box-shadow: none !important;
-        box-shadow: none !important
+        box-shadow: none !important;
     }
     a,
     a:visited {
-        text-decoration: underline
+        text-decoration: underline;
     }
     a[href]:after {
-        content: " (" attr(href) ")"
+        content: " (" attr(href) ")";
     }
     abbr[title]:after {
-        content: " (" attr(title) ")"
+        content: " (" attr(title) ")";
     }
     a[href^="javascript:"]:after,
     a[href^="#"]:after {
@@ -3184,15 +3184,15 @@ fieldset[disabled] .form-control {
 
 .form-control[disabled],
 fieldset[disabled] .form-control {
-    cursor: not-allowed
+    cursor: not-allowed;
 }
 
 textarea.form-control {
-    height: auto
+    height: auto;
 }
 
 input[type=search] {
-    -webkit-appearance: none
+    appearance: none;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
@@ -3200,7 +3200,7 @@ input[type=search] {
     input[type=time].form-control,
     input[type=datetime-local].form-control,
     input[type=month].form-control {
-        line-height: 34px
+        line-height: 34px;
     }
     .input-group-sm input[type=date],
     .input-group-sm input[type=time],
@@ -3210,7 +3210,7 @@ input[type=search] {
     input[type=time].input-sm,
     input[type=datetime-local].input-sm,
     input[type=month].input-sm {
-        line-height: 30px
+        line-height: 30px;
     }
     .input-group-lg input[type=date],
     .input-group-lg input[type=time],
@@ -3220,12 +3220,12 @@ input[type=search] {
     input[type=time].input-lg,
     input[type=datetime-local].input-lg,
     input[type=month].input-lg {
-        line-height: 46px
+        line-height: 46px;
     }
 }
 
 .form-group {
-    margin-bottom: 15px
+    margin-bottom: 15px;
 }
 
 .checkbox,
@@ -3233,7 +3233,7 @@ input[type=search] {
     position: relative;
     display: block;
     margin-top: 10px;
-    margin-bottom: 10px
+    margin-bottom: 10px;
 }
 
 .checkbox label,
@@ -3242,7 +3242,7 @@ input[type=search] {
     padding-left: 20px;
     margin-bottom: 0;
     font-weight: 400;
-    cursor: pointer
+    cursor: pointer;
 }
 
 .checkbox input[type=checkbox],
@@ -3251,12 +3251,12 @@ input[type=search] {
 .radio-inline input[type=radio] {
     position: absolute;
     margin-top: 4px\9;
-    margin-left: -20px
+    margin-left: -20px;
 }
 
 .checkbox+.checkbox,
 .radio+.radio {
-    margin-top: -5px
+    margin-top: -5px;
 }
 
 .checkbox-inline,
@@ -3267,13 +3267,13 @@ input[type=search] {
     margin-bottom: 0;
     font-weight: 400;
     vertical-align: middle;
-    cursor: pointer
+    cursor: pointer;
 }
 
 .checkbox-inline+.checkbox-inline,
 .radio-inline+.radio-inline {
     margin-top: 0;
-    margin-left: 10px
+    margin-left: 10px;
 }
 
 fieldset[disabled] input[type=checkbox],
@@ -3282,34 +3282,34 @@ input[type=checkbox].disabled,
 input[type=checkbox][disabled],
 input[type=radio].disabled,
 input[type=radio][disabled] {
-    cursor: not-allowed
+    cursor: not-allowed;
 }
 
 .checkbox-inline.disabled,
 .radio-inline.disabled,
 fieldset[disabled] .checkbox-inline,
 fieldset[disabled] .radio-inline {
-    cursor: not-allowed
+    cursor: not-allowed;
 }
 
 .checkbox.disabled label,
 .radio.disabled label,
 fieldset[disabled] .checkbox label,
 fieldset[disabled] .radio label {
-    cursor: not-allowed
+    cursor: not-allowed;
 }
 
 .form-control-static {
     min-height: 34px;
     padding-top: 7px;
     padding-bottom: 7px;
-    margin-bottom: 0
+    margin-bottom: 0;
 }
 
 .form-control-static.input-lg,
 .form-control-static.input-sm {
     padding-right: 0;
-    padding-left: 0
+    padding-left: 0;
 }
 
 .input-sm {
@@ -3317,17 +3317,17 @@ fieldset[disabled] .radio label {
     padding: 5px 10px;
     font-size: 12px;
     line-height: 1.5;
-    border-radius: 3px
+    border-radius: 3px;
 }
 
 select.input-sm {
     height: 30px;
-    line-height: 30px
+    line-height: 30px;
 }
 
 select[multiple].input-sm,
 textarea.input-sm {
-    height: auto
+    height: auto;
 }
 
 .form-group-sm .form-control {
@@ -3335,17 +3335,17 @@ textarea.input-sm {
     padding: 5px 10px;
     font-size: 12px;
     line-height: 1.5;
-    border-radius: 3px
+    border-radius: 3px;
 }
 
 .form-group-sm select.form-control {
     height: 30px;
-    line-height: 30px
+    line-height: 30px;
 }
 
 .form-group-sm select[multiple].form-control,
 .form-group-sm textarea.form-control {
-    height: auto
+    height: auto;
 }
 
 .form-group-sm .form-control-static {
@@ -3353,7 +3353,7 @@ textarea.input-sm {
     min-height: 32px;
     padding: 6px 10px;
     font-size: 12px;
-    line-height: 1.5
+    line-height: 1.5;
 }
 
 .input-lg {
@@ -3361,17 +3361,17 @@ textarea.input-sm {
     padding: 10px 16px;
     font-size: 18px;
     line-height: 1.3333333;
-    border-radius: 6px
+    border-radius: 6px;
 }
 
 select.input-lg {
     height: 46px;
-    line-height: 46px
+    line-height: 46px;
 }
 
 select[multiple].input-lg,
 textarea.input-lg {
-    height: auto
+    height: auto;
 }
 
 .form-group-lg .form-control {
@@ -3379,17 +3379,17 @@ textarea.input-lg {
     padding: 10px 16px;
     font-size: 18px;
     line-height: 1.3333333;
-    border-radius: 6px
+    border-radius: 6px;
 }
 
 .form-group-lg select.form-control {
     height: 46px;
-    line-height: 46px
+    line-height: 46px;
 }
 
 .form-group-lg select[multiple].form-control,
 .form-group-lg textarea.form-control {
-    height: auto
+    height: auto;
 }
 
 .form-group-lg .form-control-static {
@@ -3397,15 +3397,15 @@ textarea.input-lg {
     min-height: 38px;
     padding: 11px 16px;
     font-size: 18px;
-    line-height: 1.3333333
+    line-height: 1.3333333;
 }
 
 .has-feedback {
-    position: relative
+    position: relative;
 }
 
 .has-feedback .form-control {
-    padding-right: 42.5px
+    padding-right: 42.5px;
 }
 
 .form-control-feedback {
@@ -3418,7 +3418,7 @@ textarea.input-lg {
     height: 34px;
     line-height: 34px;
     text-align: center;
-    pointer-events: none
+    pointer-events: none;
 }
 
 .form-group-lg .form-control+.form-control-feedback,
@@ -3426,7 +3426,7 @@ textarea.input-lg {
 .input-lg+.form-control-feedback {
     width: 46px;
     height: 46px;
-    line-height: 46px
+    line-height: 46px;
 }
 
 .form-group-sm .form-control+.form-control-feedback,
@@ -3434,7 +3434,7 @@ textarea.input-lg {
 .input-sm+.form-control-feedback {
     width: 30px;
     height: 30px;
-    line-height: 30px
+    line-height: 30px;
 }
 
 .has-success .checkbox,
@@ -3447,29 +3447,29 @@ textarea.input-lg {
 .has-success.checkbox-inline label,
 .has-success.radio label,
 .has-success.radio-inline label {
-    color: #3c763d
+    color: #3c763d;
 }
 
 .has-success .form-control {
     border-color: #3c763d;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075)
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
 }
 
 .has-success .form-control:focus {
     border-color: #2b542c;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #67b168;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #67b168
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #67b168;
 }
 
 .has-success .input-group-addon {
     color: #3c763d;
     background-color: #dff0d8;
-    border-color: #3c763d
+    border-color: #3c763d;
 }
 
 .has-success .form-control-feedback {
-    color: #3c763d
+    color: #3c763d;
 }
 
 .has-warning .checkbox,
@@ -4286,7 +4286,7 @@ tbody.collapse.in {
     margin-left: 2px;
     vertical-align: middle;
     border-top: 4px dashed;
-    border-top: 4px solid\9;
+    border-top: 4px solid;
     border-right: 4px solid transparent;
     border-left: 4px solid transparent
 }
@@ -4373,7 +4373,7 @@ tbody.collapse.in {
     cursor: not-allowed;
     background-color: transparent;
     background-image: none;
-    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false)
+    
 }
 
 .open>.dropdown-menu {
@@ -5124,7 +5124,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     max-height: 340px
 }
 
-@media (max-device-width:480px) and (orientation:landscape) {
+@media (max-width:480px) and (orientation:landscape) {
     .navbar-fixed-bottom .navbar-collapse,
     .navbar-fixed-top .navbar-collapse {
         max-height: 200px
@@ -7682,7 +7682,6 @@ button.close {
     margin: 1px;
     text-indent: -999px;
     cursor: pointer;
-    background-color: #000\9;
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid #fff;
     border-radius: 10px;
