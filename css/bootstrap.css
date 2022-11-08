@@ -156,7 +156,6 @@ button,
 html input[type=button],
 input[type=reset],
 input[type=submit] {
-    appearance: button;
     cursor: pointer
 }
 
@@ -1476,8 +1475,7 @@ hr {
     padding: 0;
     margin: -1px;
     overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0
+    border: 0;
 }
 
 .sr-only-focusable:active,
@@ -1487,7 +1485,7 @@ hr {
     height: auto;
     margin: 0;
     overflow: visible;
-    clip: auto
+
 }
 
 [role=button] {
@@ -3102,8 +3100,8 @@ input[type=search] {
 input[type=checkbox],
 input[type=radio] {
     margin: 4px 0 0;
-    margin-top: 1px\9;
-    line-height: normal
+    margin-top: 1px;
+    line-height: normal;
 }
 
 input[type=file] {
@@ -3250,7 +3248,7 @@ input[type=search] {
 .radio input[type=radio],
 .radio-inline input[type=radio] {
     position: absolute;
-    margin-top: 4px\9;
+    margin-top: 4px;
     margin-left: -20px;
 }
 
@@ -4163,7 +4161,7 @@ fieldset[disabled] .btn-danger:hover {
 .btn-link {
     font-weight: 400;
     color: #337ab7;
-    border-radius: 0
+    border-radius: 0;
 }
 
 .btn-link,
@@ -4173,21 +4171,16 @@ fieldset[disabled] .btn-danger:hover {
 fieldset[disabled] .btn-link {
     background-color: transparent;
     -webkit-box-shadow: none;
-    box-shadow: none
+    box-shadow: none;
 }
 
-.btn-link,
-.btn-link:active,
-.btn-link:focus,
-.btn-link:hover {
-    border-color: transparent
-}
+
 
 .btn-link:focus,
 .btn-link:hover {
     color: #23527c;
     text-decoration: underline;
-    background-color: transparent
+    background-color: transparent;
 }
 
 .btn-link[disabled]:focus,
@@ -4195,7 +4188,7 @@ fieldset[disabled] .btn-link {
 fieldset[disabled] .btn-link:focus,
 fieldset[disabled] .btn-link:hover {
     color: #777;
-    text-decoration: none
+    text-decoration: none;
 }
 
 .btn-group-lg>.btn,
@@ -4203,7 +4196,7 @@ fieldset[disabled] .btn-link:hover {
     padding: 10px 16px;
     font-size: 18px;
     line-height: 1.3333333;
-    border-radius: 6px
+    border-radius: 6px;
 }
 
 .btn-group-sm>.btn,
@@ -4422,14 +4415,14 @@ tbody.collapse.in {
     content: "";
     border-top: 0;
     border-bottom: 4px dashed;
-    border-bottom: 4px solid\9
+    border-bottom: 4px solid;
 }
 
 .dropup .dropdown-menu,
 .navbar-fixed-bottom .dropdown .dropdown-menu {
     top: auto;
     bottom: 100%;
-    margin-bottom: 2px
+    margin-bottom: 2px;
 }
 
 @media (min-width:768px) {
