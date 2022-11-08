@@ -5,3 +5,25 @@
     font-weight: 400;
     font-style: normal
 }
+
+h1{
+    font-size: 2vw;
+}
+
+h2{
+    font-size: 1.7vw;
+    font-weight: 400;
+}
+
+h3{
+    font-size: 1.5vw;
+}
+
+.text{
+    &--orange{
+        color: $primary-color;
+    }
+    &--center{
+        text-align: center;
+    }
+}

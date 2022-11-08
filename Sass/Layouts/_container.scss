@@ -1,0 +1,84 @@
+.bloc{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    padding: 1vw 0vw;
+    &--texture-papier::before{
+            background: url(./../../img/texture-paper.png);
+            background-repeat: repeat;
+            background-size: 280px 280px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0
+
+    }
+    &--lined{
+        background-image: url(./../../img/lines-h2-bg.png);
+    }    
+    &--transparent  {
+        background-image: url(./../../img/agence-la-panthere.jpg);
+        background-attachment: fixed;
+        z-index: 1;
+    }
+    &--orange{
+        background-image: url(./../../img/image-de-presentation.jpeg);
+    }
+}
+
+.container{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3vw 0vw;
+    &__title{
+        text-align: center;
+    }
+    &--padded{
+        padding: 5vw 0vw;
+    }
+    &__column{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 2vw 0vw;
+        &--2{
+            width: 45%;
+        }
+    }
+    &__logo{
+        width: 7vw;
+    }
+    &__service{
+        display: flex;
+        flex-direction: row;
+    }
+    &__square{
+        background-color: rgba(165, 147, 99, 0.7);
+        width: 80%;
+        padding: 0vw 4vw;
+    }
+    &__row{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    &__gallery{
+        width: 50%;
+    }
+    &__footer{
+        padding: 0vw 0vw;
+    }
+}
+
+.img-responsive{
+    width: 100%;
+    height: auto;
+}
