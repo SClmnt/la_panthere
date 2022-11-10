@@ -1,0 +1,46 @@
+.btn{
+    display: flex;
+    background-color: $primary-color;
+    color: $tertiary-color;
+    padding: 0.5vw 2vw;
+    border-radius: 3.5vw;
+    font-size: 2vw;
+    z-index: 1;
+    @include mobile{
+        font-size: 4.5vw;
+    }
+    @include tablette{
+        font-size: 3vw;
+    }
+    &--form{
+        margin: 1vw auto;
+    }
+}
+
+.up{
+    position: fixed;
+    left: 94vw;
+    top: 90vh;
+    background-color: $primary-color;
+    border: 1px solid $tertiary-color;
+    padding: 1vw 1vw;
+    border-radius: 1.5vw;
+    @include tablette{
+        display: none;
+    }
+}
+
+button{
+    border-width: 0;
+}
+
+.icons{
+    font-size: 4vw;
+    color: $primary-color;
+    @include mobile{
+        font-size: 10vw;
+    }
+    @include tablette{
+        font-size: 7vw;
+    }
+}

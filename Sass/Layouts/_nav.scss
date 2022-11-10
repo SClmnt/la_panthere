@@ -1,0 +1,28 @@
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    @include mobile{
+    flex-direction: column;
+    }
+    &__logo{
+        display: flex;
+        width: 15vw;
+        @include mobile{
+            width: auto;
+        }
+    }
+    &__list{
+        display: flex;
+        flex-direction: row;
+        & > li{
+            padding: 0 1vw;
+            @include mobile{
+                padding: 0 2vw;
+            }
+        }
+    }
+}
