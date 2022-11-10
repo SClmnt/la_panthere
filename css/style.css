@@ -221,22 +221,22 @@ header {
   overflow: hidden;
 }
 .bloc--lined {
-  background-image: url(./../../img/lines-h2-bg.webp);
+  background-image: url(./../img/lines-h2-bg.webp);
 }
 .bloc--transparent {
-  background-image: url(./../../img/agence-la-panthere.webp);
+  background-image: url(./../img/agence-la-panthere.webp);
   background-attachment: fixed;
   position: relative;
 }
 .bloc--orange {
-  background-image: url(./../../img/image-de-presentation.webp);
+  background-image: url(./../img/image-de-presentation.webp);
 }
 .bloc--texture-papier {
   position: relative;
 }
 .bloc--doted {
   background-color: #e26b34;
-  background-image: url(./../../img/dots-bg.webp);
+  background-image: url(./../img/dots-bg.webp);
   position: relative;
 }
 
@@ -288,7 +288,7 @@ header {
   padding: 1vw 2vw;
 }
 .container--transparent::before {
-  background: url(./../../img/texture-paper.webp);
+  background: url(./../img/texture-paper.webp);
   background-repeat: repeat;
   background-size: 280px 280px;
   position: absolute;
