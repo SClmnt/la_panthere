@@ -221,7 +221,7 @@ header {
   overflow: hidden;
 }
 .bloc--lined {
-  background-image: url(~/../../img/lines-h2-bg.webp);
+  background-image: url(./../img/lines-h2-bg.webp);
 }
 .bloc--transparent {
   background-image: url(./../img/agence-la-panthere.webp);
