@@ -7,17 +7,22 @@
     padding: 1vw 0vw;
     overflow: hidden;
     &--lined{
-        background-image: url(./../../img/lines-h2-bg.png);
+        background-image: url(./../../img/lines-h2-bg.webp);
     }    
     &--transparent  {
-        background-image: url(./../../img/agence-la-panthere.jpg);
+        background-image: url(./../../img/agence-la-panthere.webp);
         background-attachment: fixed;
         position: relative;
     }
     &--orange{
-        background-image: url(./../../img/image-de-presentation.jpeg);
+        background-image: url(./../../img/image-de-presentation.webp);
     }
     &--texture-papier{
+        position: relative;
+    }
+    &--doted{
+        background-color: $primary-color;
+        background-image: url(./../../img/dots-bg.webp);
         position: relative;
     }
 }
@@ -29,6 +34,12 @@
     justify-content: space-around;
     align-items: center;
     padding: 3vw 0vw;
+    @include tablette{
+        width: 80%;
+    }
+    @include mobile{
+        width: 90%;
+    }
     &__title{
         text-align: center;
     }
@@ -42,15 +53,22 @@
         align-items: center;
         padding: 2vw 0vw;
         z-index: 1;
+        &--row{
+            width: 60%;
+            @include mobile{
+                width: 100%;
+            }
+        }
         &--2{
             width: 45%;
         }
         &--4{
             width: 25%;
+            padding: 1vw 2vw;
         }
     }
     &--transparent::before{
-        background: url(./../../img/texture-paper.png);
+        background: url(./../../img/texture-paper.webp);
         background-repeat: repeat;
         background-size: 280px 280px;
         position: absolute;
@@ -59,14 +77,25 @@
         left: 0;
         right: 0;
         content: '';
+    }
 
-}
+
     &__logo{
         width: 7vw;
+        height: auto;
+        @include tablette{
+            width: 14vw;
+        }
+        @include mobile{
+            width: 18vw;
+        }
     }
     &__service{
         display: flex;
         flex-direction: row;
+        @include mobile{
+            flex-direction: column;
+        }
     }
     &__square{
         background-color: rgba(165, 147, 99, 0.7);
@@ -78,16 +107,32 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        &--mcolumn{
+            @include mobile{
+                flex-direction: column;
+            }
+        }
     }
     &__gallery{
         width: 50%;
+        @include tablette{
+            width: 80%;
+        }
+        @include mobile{
+            width: 90%;
+        }
     }
     &__footer{
         padding: 0vw 0vw;
+    }
+    &__citation > img{
+        max-width: 90vw;
+        height: auto;
     }
 }
 
 .img-responsive{
     width: 100%;
     height: auto;
+    max-width: 320px;
 }

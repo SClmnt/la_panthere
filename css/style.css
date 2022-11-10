@@ -9,6 +9,16 @@ html, body {
   font-family: "et-line", sans-serif;
   font-size: 1.5vw;
 }
+@media screen and (max-width: 768px) {
+  html, body {
+    font-size: 3vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  html, body {
+    font-size: 4vw;
+  }
+}
 
 ul {
   list-style: none;
@@ -31,28 +41,36 @@ main {
   align-items: center;
 }
 
-@font-face {
-  font-family: et-line;
-  src: url(../fonts/et-line.eot);
-  src: url(../fonts/et-line.eot?#iefix) format("embedded-opentype"), url(../fonts/et-line.woff) format("woff"), url(../fonts/et-line.ttf) format("truetype"), url(../fonts/et-line.svg#et-line) format("svg");
-  font-weight: 400;
-  font-style: normal;
-}
 h1 {
-  font-size: 2vw;
+  font-size: 2.2vw;
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 5vw;
+  }
 }
 
 h2 {
   font-size: 1.7vw;
   font-weight: 400;
 }
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 4.5vw;
+  }
+}
 
 h3 {
   font-size: 1.5vw;
 }
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 3vw;
+  }
+}
 
 .text--orange {
-  color: #F3976C;
+  color: #e26b34;
   z-index: 1;
 }
 .text--center {
@@ -62,11 +80,59 @@ h3 {
 
 .btn {
   display: flex;
-  background-color: #F3976C;
-  color: #333333;
+  background-color: #e26b34;
+  color: white;
   padding: 0.5vw 2vw;
   border-radius: 3.5vw;
+  font-size: 2vw;
   z-index: 1;
+}
+@media screen and (max-width: 480px) {
+  .btn {
+    font-size: 4.5vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .btn {
+    font-size: 3vw;
+  }
+}
+.btn--form {
+  margin: 1vw auto;
+}
+
+.up {
+  position: fixed;
+  left: 94vw;
+  top: 90vh;
+  background-color: #e26b34;
+  border: 1px solid white;
+  padding: 1vw 1vw;
+  border-radius: 1.5vw;
+}
+@media screen and (max-width: 768px) {
+  .up {
+    display: none;
+  }
+}
+
+button {
+  border-width: 0;
+}
+
+.icons {
+  font-size: 4vw;
+  color: #e26b34;
+}
+@media screen and (max-width: 480px) {
+  .icons {
+    font-size: 10vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .icons {
+    font-size: 7vw;
+  }
 }
 
 header {
@@ -83,6 +149,33 @@ header {
   justify-content: space-between;
   padding: 2vw 0vw;
 }
+@media screen and (max-width: 768px) {
+  .header__bloc {
+    width: 90%;
+  }
+}
+
+.footer {
+  background-color: #e26b34;
+}
+.footer__title {
+  font-size: 1.3vw;
+}
+@media screen and (max-width: 480px) {
+  .footer__title {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__title {
+    font-size: 3vw;
+  }
+}
+
+.row-social {
+  display: flex;
+  flex-direction: row;
+}
 
 .navbar {
   display: flex;
@@ -91,9 +184,19 @@ header {
   width: 100%;
   align-items: center;
 }
+@media screen and (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+  }
+}
 .navbar__logo {
   display: flex;
   width: 15vw;
+}
+@media screen and (max-width: 480px) {
+  .navbar__logo {
+    width: auto;
+  }
 }
 .navbar__list {
   display: flex;
@@ -102,17 +205,10 @@ header {
 .navbar__list > li {
   padding: 0 1vw;
 }
-
-.footer {
-  background-color: #F3976C;
-}
-.footer__title {
-  font-size: 1.3vw;
-}
-
-.row-social {
-  display: flex;
-  flex-direction: row;
+@media screen and (max-width: 480px) {
+  .navbar__list > li {
+    padding: 0 2vw;
+  }
 }
 
 .bloc {
@@ -125,17 +221,22 @@ header {
   overflow: hidden;
 }
 .bloc--lined {
-  background-image: url(./../../img/lines-h2-bg.png);
+  background-image: url(./../../img/lines-h2-bg.webp);
 }
 .bloc--transparent {
-  background-image: url(./../../img/agence-la-panthere.jpg);
+  background-image: url(./../../img/agence-la-panthere.webp);
   background-attachment: fixed;
   position: relative;
 }
 .bloc--orange {
-  background-image: url(./../../img/image-de-presentation.jpeg);
+  background-image: url(./../../img/image-de-presentation.webp);
 }
 .bloc--texture-papier {
+  position: relative;
+}
+.bloc--doted {
+  background-color: #e26b34;
+  background-image: url(./../../img/dots-bg.webp);
   position: relative;
 }
 
@@ -146,6 +247,16 @@ header {
   justify-content: space-around;
   align-items: center;
   padding: 3vw 0vw;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    width: 90%;
+  }
 }
 .container__title {
   text-align: center;
@@ -161,14 +272,23 @@ header {
   padding: 2vw 0vw;
   z-index: 1;
 }
+.container__column--row {
+  width: 60%;
+}
+@media screen and (max-width: 480px) {
+  .container__column--row {
+    width: 100%;
+  }
+}
 .container__column--2 {
   width: 45%;
 }
 .container__column--4 {
   width: 25%;
+  padding: 1vw 2vw;
 }
 .container--transparent::before {
-  background: url(./../../img/texture-paper.png);
+  background: url(./../../img/texture-paper.webp);
   background-repeat: repeat;
   background-size: 280px 280px;
   position: absolute;
@@ -180,10 +300,26 @@ header {
 }
 .container__logo {
   width: 7vw;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  .container__logo {
+    width: 14vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container__logo {
+    width: 18vw;
+  }
 }
 .container__service {
   display: flex;
   flex-direction: row;
+}
+@media screen and (max-width: 480px) {
+  .container__service {
+    flex-direction: column;
+  }
 }
 .container__square {
   background-color: rgba(165, 147, 99, 0.7);
@@ -196,14 +332,64 @@ header {
   flex-direction: row;
   justify-content: space-around;
 }
+@media screen and (max-width: 480px) {
+  .container__row--mcolumn {
+    flex-direction: column;
+  }
+}
 .container__gallery {
   width: 50%;
 }
+@media screen and (max-width: 768px) {
+  .container__gallery {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container__gallery {
+    width: 90%;
+  }
+}
 .container__footer {
   padding: 0vw 0vw;
+}
+.container__citation > img {
+  max-width: 90vw;
+  height: auto;
 }
 
 .img-responsive {
   width: 100%;
   height: auto;
+  max-width: 320px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+@media screen and (max-width: 480px) {
+  form {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  textarea {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+label {
+  margin: 1vw 0;
 }/*# sourceMappingURL=style.css.map */
